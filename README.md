@@ -1,5 +1,5 @@
-<img width="244" height="97" alt="image" src="https://github.com/user-attachments/assets/95ef0278-3335-4a0b-aba5-2a0f74ec3a42" />PPG-Based Blood Pressure Estimation using Machine Learning
-                                                                                                #Overview
+PPG-Based Blood Pressure Estimation using Machine Learning / Deep Learning
+                                                                     #Overview
 
 This project focuses on cuff-less blood pressure (BP) estimation using photoplethysmography (PPG) signals.
 The goal is to estimate Systolic Blood Pressure (SBP) and Diastolic Blood Pressure (DBP) from PPG waveforms through a robust pipeline of signal preprocessing, cycle segmentation, feature extraction, and machine learning regression.
@@ -7,7 +7,7 @@ The goal is to estimate Systolic Blood Pressure (SBP) and Diastolic Blood Pressu
 This implementation uses a dataset collected from AIMS Hospital, containing 3-channel biosignals (ECG, Respiration, PPG) from 46 subjects, each with 268,289 samples.
 Subject-level SBP and DBP readings were recorded in mmHg and used as target variables.
 
-                                                                                                  # Methodology
+                                                                        # Methodology
 1. Data Acquisition
 Each .acq file contains three channels:
 Channel 1: ECG
@@ -104,7 +104,7 @@ Hnece, check this out!
            └────────────────────┘
 <img width="1423" height="1040" alt="EdrawMax-AI-diagram (2) (1)" src="https://github.com/user-attachments/assets/a253004c-e017-4be0-b843-b05074631b3d" />
                                                      
-                                                                                                  #Results
+                                                                         #Results
 Parameter	SBP (mmHg)	DBP (mmHg)
 PERFORMANCE METRICS FOR SBP AND DBP ESTIMATION
 Metric                SBP    DBP
@@ -117,7 +117,7 @@ These errors are in true clinical units (mmHg) since the targets (SBP/DBP) were 
 The results indicate that the model achieves consistent and clinically relevant accuracy, with lower error for DBP and higher variance for SBP (consistent with literature trends).
 <img width="244" height="97" alt="image" src="https://github.com/user-attachments/assets/8b179992-e1fc-4074-9af3-c2c12cd1e2ba" />
 
-                                                                                                #Key Contributions
+                                                                        #Key Contributions
 
 Developed a complete end-to-end cuff-less BP estimation pipeline using PPG signals.
 Implemented signal-quality-based filtering (SNR ≥ 3 dB) and SPA-based detrending for robust preprocessing.
